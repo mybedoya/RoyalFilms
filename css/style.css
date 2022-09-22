@@ -1,0 +1,211 @@
+:root {
+    --azul: rgb(0, 41, 85);
+
+    --fondo: rgb(235, 235, 235);
+    --colortexto:rgb(242,242,242);
+
+
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    background-color: var(--azul);
+    align-items: center;
+    padding: 10px;
+}
+body{
+    background-color: var(--fondo);
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+
+
+.logo img{
+    height: 80px;
+    margin: 5px;
+}
+
+div#banner{
+    width: 100%;
+    height: 300px;
+    background-color: red;
+}
+
+img#img_banner{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: var(--colortexto);
+    padding: 10px;
+    margin: 40px;
+    
+    
+}
+header div a:hover,
+header div a.activo{
+    color: darkgoldenrod;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+@media (max-width:700px){
+header{
+    flex-direction: column;
+
+} 
+div{
+    padding: 10px 0px;
+}
+}
+
+header div a{
+    color:#aaa;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+h2{
+    margin: 10px;
+    padding: 20px;
+}
+h2 span{
+    color: rgb(0, 132, 255);
+}
+/*------------------drid---------------------------*/
+.contenedor{
+    display: grid;
+    grid-template-columns: 66% 30%;
+    gap: 42px;
+    width: 97%;
+    margin-bottom: 49px;
+    padding: 29px;
+}
+.contenedor-peliculas{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 10px;
+}
+.imagen{
+    min-height: 250px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+/*----------------banner vertical*/
+.banner-vertical{
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-vertical .boton {
+    color: white;
+    margin-bottom: 10px;
+    background: #0e1620;
+	border: none;
+	border-radius: 8px;
+    display: grid;
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+    grid-template-rows: auto;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.banner-vertical input{
+    margin-bottom: 8px;
+    width: 95%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.imagen-baner{
+    display: grid;
+    grid-template-rows: auto;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.proximos-estrenos{
+    display: grid;
+    background-color: yellow;
+
+}
+
+
+
+
+
+/*----------------drid banner inferior*/
+.grid-banner-inferior{
+    width: 100%;
+    height: 400px;
+    background-color:red;
+
+}
+
+img#img_banner_inferior{
+    display: block;
+    margin: auto;
+    width: 100%;
+    
+    min-width: 500px;
+}
+@media (max-width:700px){
+    img#img_banner_inferior{
+        flex-direction: column;
+    
+    } 
+    div{
+        padding: 10px 0px;
+    }
+    }
+body.contenedor-drid-2{
+    display: flex;
+}
+
+
+
+/* SHADOW/GLOW TRANSITIONS */
+/* Glow */
+.hvr-glow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+  }
+  .hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  }
+
+
